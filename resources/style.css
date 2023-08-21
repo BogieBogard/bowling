@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    background: black;
+}
+
+@keyframes wobble {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    45% {
+        transform: rotateZ(6deg);
+    }
+
+    60% {
+        transform: rotateZ(-4deg);
+    }
+
+    70% {
+        transform: rotateZ(3deg);
+    }
+
+    75% {
+        transform: rotateZ(-2deg);
+    }
+
+    77% {
+        transform: rotateZ(1deg);
+    }
+
+    78% {
+        transform: rotateZ(0deg);
+    }
+}
+
+.reward-container {
+    position: relative;
+    margin: 40px 0;
+}
+
+    .reward-container #pins {
+        position: relative;
+        left: calc(50% - 188px);
+    }
+
+        .reward-container #pins:hover .kingpin {
+            animation: wobble 1600ms ease 1;
+        }
+
+        .reward-container #pins .pin.kingpin {
+            transform-origin: bottom;
+        }
+
+    .reward-container #banner {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 100%;
+    }
+
+@media only screen and (min-width: 1679px) {
+    .onBanner {
+        position: absolute;
+        margin-top: -179px;
+        width: 48%;
+        margin-left: 26%;
+        height: 120px;
+    }
+}
+
+@media only screen and (min-width: 1209px) and (max-width: 1678px) {
+    .onBanner {
+        position: absolute;
+        margin-top: -179px;
+        width: 54.9%;
+        margin-left: 22.6%;
+        height: 120px;
+    }
+}
+
+@media only screen and (min-width: 1114px) and (max-width: 1208px) {
+    .onBanner {
+        position: absolute;
+        margin-top: -179px;
+        width: 76.4%;
+        margin-left: 11.8%;
+        height: 120px;
+    }
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (min-width: 992px) and (max-width: 1113px) {
+    .onBanner {
+        position: absolute;
+        margin-top: -173px;
+        width: 82.2%;
+        margin-left: 8.9%;
+        height: 109px;
+    }
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .onBanner {
+        position: absolute;
+        margin-top: -170px;
+        width: 82.5%;
+        margin-left: 8.6%;
+        height: 102px;
+    }
+
+    .navbar-collapse {
+        background: #f66c4d;
+        width: 100%;
+        padding: 10px;
+        background-image: linear-gradient(to right, #f66e4a,#f66e4a,#f66c4e,#f66953,#f7794e,#f66164,#f65974);
+    }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    .onBanner {
+        position: absolute;
+        margin-top: -158px;
+        width: 82.5%;
+        margin-left: 8.6%;
+        height: 80px;
+    }
+
+    .navbar-collapse {
+        background: #f66c4d;
+        width: 100%;
+        padding: 10px;
+        background-image: linear-gradient(to right, #f66e4a,#f66e4a,#f66c4e,#f66953,#f7794e,#f66164,#f65974);
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .onBanner {
+        position: absolute;
+        margin-top: -158px;
+        width: 82.5%;
+        margin-left: 8.6%;
+        height: 80px;
+    }
+
+    .navbar-collapse {
+        background: #f66c4d;
+        width: 100%;
+        padding: 10px;
+        background-image: linear-gradient(to right, #f66e4a,#f66e4a,#f66c4e,#f66953,#f7794e,#f66164,#f65974);
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    .onBanner {
+        position: absolute;
+        margin-top: -143px;
+        width: 82.8%;
+        margin-left: 8.6%;
+        height: 51px;
+    }
+
+    .navbar-collapse {
+        background: #f66c4d;
+        width: 100%;
+        padding: 10px;
+        background-image: linear-gradient(to right, #f66e4a,#f66e4a,#f66c4e,#f66953,#f7794e,#f66164,#f65974);
+    }
+}
